@@ -13,6 +13,10 @@
     margin-bottom: 50px;
   }
 
+  .reviews-wrapper.swiper-wrapper {
+    justify-content: center;
+  }
+
   .reviews-item {
     min-width: 100%;
     margin: 0 auto;
@@ -26,14 +30,6 @@
   .reviews-text {
     max-width: 430px;
     width: 100%;
-  }
-
-  .arrow-prev.swiper-button-prev {
-    left: 18px;
-  }
-
-  .arrow-next.swiper-button-next {
-    right: 18px;
   }
 }
 
@@ -278,14 +274,6 @@
 
   .reviews-text {
     max-width: 100%;
-  }
-
-  .arrow-prev.swiper-button-prev {
-    left: 0px;
-  }
-
-  .arrow-next.swiper-button-next {
-    right: 0px;
   }
 
   /* terms-page */
