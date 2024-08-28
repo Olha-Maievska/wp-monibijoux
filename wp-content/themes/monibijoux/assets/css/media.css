@@ -9,6 +9,10 @@
     margin-bottom: 90px;
   }
 
+  .reviews-wrapper.swiper-wrapper {
+    justify-content: center;
+  }
+
   .reviews-title {
     margin-bottom: 50px;
   }
@@ -58,7 +62,7 @@
 
   .menu {
     position: absolute;
-    top: 152px;
+    top: 156px;
     left: 0;
     right: 0;
     width: 100%;
@@ -70,12 +74,14 @@
     text-align: center;
     padding: 20px 0;
     opacity: 0;
+    display: none;
     z-index: 98;
     transition: all 0.3s ease-in-out;
   }
 
   .menu.active-menu {
     opacity: 1;
+    display: block;
   }
 
   .menu-list,
