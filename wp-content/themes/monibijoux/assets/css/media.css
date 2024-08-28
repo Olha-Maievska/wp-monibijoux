@@ -12,11 +12,7 @@
   .reviews-title {
     margin-bottom: 50px;
   }
-
-  .reviews-wrapper.swiper-wrapper {
-    justify-content: center;
-  }
-
+  
   .reviews-item {
     min-width: 100%;
     margin: 0 auto;
