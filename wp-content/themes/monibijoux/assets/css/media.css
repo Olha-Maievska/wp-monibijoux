@@ -27,14 +27,6 @@
     max-width: 430px;
     width: 100%;
   }
-
-  .arrow-prev.swiper-button-prev {
-    left: 18px;
-  }
-
-  .arrow-next.swiper-button-next {
-    right: 18px;
-  }
 }
 
 /* media screen 1024px */
@@ -278,14 +270,6 @@
 
   .reviews-text {
     max-width: 100%;
-  }
-
-  .arrow-prev.swiper-button-prev {
-    left: 0px;
-  }
-
-  .arrow-next.swiper-button-next {
-    right: 0px;
   }
 
   /* terms-page */
