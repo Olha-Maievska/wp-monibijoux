@@ -375,6 +375,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .tnp-subscription input[type='email'].subscribe-input {
