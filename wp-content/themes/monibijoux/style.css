@@ -1,0 +1,379 @@
+/*!
+Theme Name: monibijoux
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Text Domain: monibijoux
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+:root {
+  --color-pink: #e3a5c3;
+}
+:root {
+  --color-grapefruit: #ee3660;
+}
+:root {
+  --color-green: #bad878;
+}
+:root {
+  --color-powder: #ede0da;
+}
+:root {
+  --color-black: #43221e;
+}
+
+html {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Jost', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.main-button {
+  display: block;
+  width: 180px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: var(--color-grapefruit);
+  padding: 8px 0;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(245, 223, 223, 0.339),
+    transparent
+  );
+  transition: all 0.4s ease;
+}
+
+.main-button:hover {
+  box-shadow: 1px 1px 20px 7px rgba(237, 54, 96, 0.5);
+  color: #fff;
+}
+
+.main-button:hover:before {
+  left: 100%;
+}
+
+.simple-green-btn {
+  background-color: var(--color-green);
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  cursor: pointer;
+  padding: 8px 18px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.close-btn {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  z-index: 99;
+  cursor: pointer;
+  display: none;
+}
+
+.close-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.burger-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  display: none;
+}
+
+.search-btn {
+  margin-right: 30px;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.basket-btn {
+  display: flex;
+  align-items: end;
+  position: relative;
+  padding-right: 12px;
+}
+
+.basket-img {
+  width: 30px;
+  height: 30px;
+}
+
+.basket-count {
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+}
+
+.modal-dialog.custom-modal-dialog {
+  margin-top: 120px;
+}
+
+.arrow-prev,
+.arrow-next {
+  width: 19px;
+  height: 37px;
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+}
+
+.arrow-prev {
+  left: 10px;
+}
+
+.arrow-next {
+  right: -10px;
+}
+
+.arrow-prev img,
+.arrow-next img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.letter-b {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.onsale.sold-out {
+  background-color: var(--color-grapefruit) !important;
+  line-height: 18px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3px !important;
+}
+
+/* override styles for woocommerce add-to-cart-button */
+.single-product .single_add_to_cart_button,
+.add-to-cart-btn {
+  background-color: var(--color-green) !important;
+  color: #fff !important;
+  padding: 8px 12px !important;
+  font-size: 16px !important;
+  border-radius: 8px !important;
+  position: relative;
+}
+
+.single-product .single_add_to_cart_button,
+.add-to-cart-btn.added::after {
+  font-family: inherit !important;
+  background-color: var(--color-green);
+  content: 'Added' !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px !important;
+  margin-left: 0 !important;
+}
+
+/* centers the loader in woocommerce add-to-cart-button */
+.woocommerce .ajax_add_to_cart.loading-custom.loading::after {
+  right: 40% !important;
+}
+
+.woocommerce-pagination {
+  margin-bottom: 30px;
+}
+
+/* remove text decoration woocommerce for sale price */
+.woocommerce ins {
+  text-decoration: none;
+}
+
+/* styles for search field and button */
+.aws-container .aws-search-field {
+  border: 1px solid var(--color-green);
+}
+
+.aws-container .aws-search-field::placeholder {
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+}
+
+.aws-container .aws-search-field:focus {
+  border: 1px solid var(--color-grapefruit);
+}
+
+.aws-container .aws-search-form .aws-form-btn {
+  background: var(--color-grapefruit);
+  opacity: 0.7;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.aws-container .aws-search-form .aws-form-btn:hover {
+  background: var(--color-grapefruit);
+  opacity: 1;
+}
+
+.aws-container .aws-search-form .aws-search-btn_icon {
+  color: #fff;
+}
+
+/* single product page */
+.woocommerce div.product form.cart {
+  display: flex;
+  align-items: center;
+}
+
+.woocommerce div.product .variations_form.cart {
+  flex-direction: column;
+  align-items: start;
+}
+
+.woocommerce div.product form.cart div.quantity {
+  margin-right: 10px;
+}
+
+.woocommerce-grouped-product-list.group_table {
+  margin-bottom: 10px;
+}
+
+.woocommerce-grouped-product-list-item__quantity .quantity .input-group {
+  flex-wrap: nowrap;
+}
+
+.woocommerce div.product form.grouped_form {
+  display: unset;
+}
+
+.single_variation_wrap .woocommerce-variation-price {
+  margin-bottom: 10px;
+}
+
+/* cart page*/
+.woocommerce .cart .update-cart.button:disabled,
+.woocommerce .cart .update-cart.button:disabled:hover,
+.woocommerce .cart .update-cart.button {
+  color: #fff;
+  background-color: var(--color-green);
+  font-weight: 600;
+}
+
+.woocommerce .coupon button[name='apply_coupon'] {
+  background-color: transparent;
+  border: 1px solid var(--color-pink);
+  color: var(--color-pink);
+}
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+  border: 2px solid var(--color-powder);
+}
+
+.woocommerce-cart table.cart img {
+  width: 80px;
+}
+
+.woocommerce .return-to-shop .button.wc-backward {
+  color: #fff;
+  background-color: var(--color-green);
+  font-weight: 600;
+}
+
+.woocommerce a.remove:hover {
+  color: red !important;
+  background: transparent;
+}
+
+.woocommerce .col2-set,
+.woocommerce-page #customer_details {
+  margin-bottom: 30px;
+}
